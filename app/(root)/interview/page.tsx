@@ -6,12 +6,14 @@ const Page = async () => {
 
   return (
     <>
-      <h3>Interview generation</h3>
+      <h3>
+        Interview generation
+      </h3>
 
       <Agent
-        userName="You"
-        userId="user1"
-        
+        userName={user?.name!}
+        userId={user?.id}
+        // profileImage={user?.profileURL}
         type="generate"
       />
     </>
